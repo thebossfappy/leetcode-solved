@@ -5,7 +5,7 @@
             Add the two numbers and return the sum as a linked list.
             You may assume the two numbers do not contain any leading zero, except the number 0 itself..
     URL: https://leetcode.com/problems/add-two-numbers/
-    Resource: Runtime: 3393 ms, Memory Usage: 15 MB
+    Resource: Runtime: 72 ms Memory Usage: 13.9 MB
 """
 
 class ListNode:
