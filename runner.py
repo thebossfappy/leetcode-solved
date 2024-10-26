@@ -4,6 +4,9 @@ from quizzes._3 import Solution as _3
 from quizzes._169 import Solution as _169
 from quizzes._976 import Solution as _976
 from quizzes.pandas._175 import Solution as _175
+from quizzes.pandas._181 import Solution as _181
+from quizzes.pandas._182 import Solution as _182
+from quizzes.pandas._183 import Solution as _183
 
 # if __name__ == "__main__":
 #     input = [2, 2, 1, 1, 1, 2, 2]
@@ -42,27 +45,74 @@ from quizzes.pandas._175 import Solution as _175
 #     print(f'quiz#976 (Largest Perimeter Triangle): input={input}, answer: {_976().largestPerimeter(input)}')
 
 # 175
+# if __name__ == "__main__":
+#     import pandas as pd
+
+#     # Example data
+#     person_data = {
+#         "personId": [1, 2],
+#         "lastName": ["Wang", "Alice"],
+#         "firstName": ["Allen", "Bob"],
+#     }
+
+#     address_data = {
+#         "addressId": [1, 2],
+#         "personId": [2, 3],
+#         "city": ["New York City", "Leetcode"],
+#         "state": ["New York", "California"],
+#     }
+
+#     # Convert to DataFrames
+#     person_df = pd.DataFrame(person_data)
+#     address_df = pd.DataFrame(address_data)
+
+#     # Call the function
+#     result_df = _175.combine_two_tables(person_df, address_df)
+#     print(result_df)
+
+# 181
 if __name__ == "__main__":
     import pandas as pd
 
-    # Example data
-    person_data = {
-        "personId": [1, 2],
-        "lastName": ["Wang", "Alice"],
-        "firstName": ["Allen", "Bob"],
+    employee_data = {
+        "id": [1, 2, 3, 4],
+        "name": ["Joe", "Henry", "Sam", "Max"],
+        "salary": [70000, 80000, 60000, 90000],
+        "managerId": [3, 4, None, None],
     }
 
-    address_data = {
-        "addressId": [1, 2],
-        "personId": [2, 3],
-        "city": ["New York City", "Leetcode"],
-        "state": ["New York", "California"],
-    }
-
-    # Convert to DataFrames
-    person_df = pd.DataFrame(person_data)
-    address_df = pd.DataFrame(address_data)
+    # Convert to DataFrame
+    employee_df = pd.DataFrame(employee_data)
 
     # Call the function
-    result_df = _175.combine_two_tables(person_df, address_df)
+    result_df = _181.find_employees(employee_df)
+
+# 182
+if __name__ == "__main__":
+    import pandas as pd
+
+    person_data = {"id": [1, 2, 3], "email": ["a@b.com", "c@d.com", "a@b.com"]}
+
+    # Convert to DataFrame
+    person_df = pd.DataFrame(person_data)
+
+    # Call the function
+    result_df = _182.duplicate_emails(person_df)
+    print(result_df)
+
+# 183
+if __name__ == "__main__":
+    import pandas as pd
+
+    # Input data
+    customers_data = {"id": [1, 2, 3, 4], "name": ["Joe", "Henry", "Sam", "Max"]}
+
+    orders_data = {"id": [1, 2], "customerId": [3, 1]}
+
+    # Convert to DataFrames
+    customers_df = pd.DataFrame(customers_data)
+    orders_df = pd.DataFrame(orders_data)
+
+    # Call the function
+    result_df = _183.find_customers(customers_df, orders_df)
     print(result_df)
