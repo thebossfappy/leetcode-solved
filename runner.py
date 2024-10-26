@@ -4,6 +4,7 @@ from quizzes._3 import Solution as _3
 from quizzes._169 import Solution as _169
 from quizzes._976 import Solution as _976
 from quizzes.pandas._175 import Solution as _175
+from quizzes.pandas._182 import Solution as _182
 
 # if __name__ == "__main__":
 #     input = [2, 2, 1, 1, 1, 2, 2]
@@ -42,27 +43,41 @@ from quizzes.pandas._175 import Solution as _175
 #     print(f'quiz#976 (Largest Perimeter Triangle): input={input}, answer: {_976().largestPerimeter(input)}')
 
 # 175
+# if __name__ == "__main__":
+#     import pandas as pd
+
+#     # Example data
+#     person_data = {
+#         "personId": [1, 2],
+#         "lastName": ["Wang", "Alice"],
+#         "firstName": ["Allen", "Bob"],
+#     }
+
+#     address_data = {
+#         "addressId": [1, 2],
+#         "personId": [2, 3],
+#         "city": ["New York City", "Leetcode"],
+#         "state": ["New York", "California"],
+#     }
+
+#     # Convert to DataFrames
+#     person_df = pd.DataFrame(person_data)
+#     address_df = pd.DataFrame(address_data)
+
+#     # Call the function
+#     result_df = _175.combine_two_tables(person_df, address_df)
+#     print(result_df)
+
+
+# 182
 if __name__ == "__main__":
     import pandas as pd
 
-    # Example data
-    person_data = {
-        "personId": [1, 2],
-        "lastName": ["Wang", "Alice"],
-        "firstName": ["Allen", "Bob"],
-    }
+    person_data = {"id": [1, 2, 3], "email": ["a@b.com", "c@d.com", "a@b.com"]}
 
-    address_data = {
-        "addressId": [1, 2],
-        "personId": [2, 3],
-        "city": ["New York City", "Leetcode"],
-        "state": ["New York", "California"],
-    }
-
-    # Convert to DataFrames
+    # Convert to DataFrame
     person_df = pd.DataFrame(person_data)
-    address_df = pd.DataFrame(address_data)
 
     # Call the function
-    result_df = _175.combine_two_tables(person_df, address_df)
+    result_df = _182.duplicate_emails(person_df)
     print(result_df)
