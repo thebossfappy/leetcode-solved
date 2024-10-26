@@ -4,6 +4,7 @@ from quizzes._3 import Solution as _3
 from quizzes._169 import Solution as _169
 from quizzes._976 import Solution as _976
 from quizzes.pandas._175 import Solution as _175
+from quizzes.pandas._183 import Solution as _183
 
 # if __name__ == "__main__":
 #     input = [2, 2, 1, 1, 1, 2, 2]
@@ -65,4 +66,21 @@ if __name__ == "__main__":
 
     # Call the function
     result_df = _175.combine_two_tables(person_df, address_df)
+    print(result_df)
+
+# 183
+if __name__ == "__main__":
+    import pandas as pd
+
+    # Input data
+    customers_data = {"id": [1, 2, 3, 4], "name": ["Joe", "Henry", "Sam", "Max"]}
+
+    orders_data = {"id": [1, 2], "customerId": [3, 1]}
+
+    # Convert to DataFrames
+    customers_df = pd.DataFrame(customers_data)
+    orders_df = pd.DataFrame(orders_data)
+
+    # Call the function
+    result_df = _183.find_customers(customers_df, orders_df)
     print(result_df)
