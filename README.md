@@ -17,3 +17,9 @@ This repository contains solutions to various LeetCode problems, organized for e
       - Runtime: 69 ms
       - Memory Usage: 14 MB
   """
+- `runner.py`: This script is provided to facilitate running and testing the solutions in the repository.
+
+
+## Usage
+
+To execute a specific solution, run the corresponding Python file from the quizzes directory or utilize runner.py for streamlined testing.
