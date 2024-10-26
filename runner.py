@@ -71,48 +71,48 @@ from quizzes.pandas._183 import Solution as _183
 #     print(result_df)
 
 # 181
-if __name__ == "__main__":
-    import pandas as pd
+# if __name__ == "__main__":
+#     import pandas as pd
 
-    employee_data = {
-        "id": [1, 2, 3, 4],
-        "name": ["Joe", "Henry", "Sam", "Max"],
-        "salary": [70000, 80000, 60000, 90000],
-        "managerId": [3, 4, None, None],
-    }
+#     employee_data = {
+#         "id": [1, 2, 3, 4],
+#         "name": ["Joe", "Henry", "Sam", "Max"],
+#         "salary": [70000, 80000, 60000, 90000],
+#         "managerId": [3, 4, None, None],
+#     }
 
-    # Convert to DataFrame
-    employee_df = pd.DataFrame(employee_data)
+#     # Convert to DataFrame
+#     employee_df = pd.DataFrame(employee_data)
 
-    # Call the function
-    result_df = _181.find_employees(employee_df)
+#     # Call the function
+#     result_df = _181.find_employees(employee_df)
 
 # 182
-if __name__ == "__main__":
-    import pandas as pd
+# if __name__ == "__main__":
+#     import pandas as pd
 
-    person_data = {"id": [1, 2, 3], "email": ["a@b.com", "c@d.com", "a@b.com"]}
+#     person_data = {"id": [1, 2, 3], "email": ["a@b.com", "c@d.com", "a@b.com"]}
 
-    # Convert to DataFrame
-    person_df = pd.DataFrame(person_data)
+#     # Convert to DataFrame
+#     person_df = pd.DataFrame(person_data)
 
-    # Call the function
-    result_df = _182.duplicate_emails(person_df)
-    print(result_df)
+#     # Call the function
+#     result_df = _182.duplicate_emails(person_df)
+#     print(result_df)
 
 # 183
-if __name__ == "__main__":
-    import pandas as pd
+# if __name__ == "__main__":
+#     import pandas as pd
 
-    # Input data
-    customers_data = {"id": [1, 2, 3, 4], "name": ["Joe", "Henry", "Sam", "Max"]}
+#     # Input data
+#     customers_data = {"id": [1, 2, 3, 4], "name": ["Joe", "Henry", "Sam", "Max"]}
 
-    orders_data = {"id": [1, 2], "customerId": [3, 1]}
+#     orders_data = {"id": [1, 2], "customerId": [3, 1]}
 
-    # Convert to DataFrames
-    customers_df = pd.DataFrame(customers_data)
-    orders_df = pd.DataFrame(orders_data)
+#     # Convert to DataFrames
+#     customers_df = pd.DataFrame(customers_data)
+#     orders_df = pd.DataFrame(orders_data)
 
-    # Call the function
-    result_df = _183.find_customers(customers_df, orders_df)
-    print(result_df)
+#     # Call the function
+#     result_df = _183.find_customers(customers_df, orders_df)
+#     print(result_df)
