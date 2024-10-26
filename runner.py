@@ -7,6 +7,7 @@ from quizzes.pandas._175 import Solution as _175
 from quizzes.pandas._181 import Solution as _181
 from quizzes.pandas._182 import Solution as _182
 from quizzes.pandas._183 import Solution as _183
+from quizzes._88 import Solution as _88
 
 # if __name__ == "__main__":
 #     input = [2, 2, 1, 1, 1, 2, 2]
@@ -116,3 +117,35 @@ from quizzes.pandas._183 import Solution as _183
 #     # Call the function
 #     result_df = _183.find_customers(customers_df, orders_df)
 #     print(result_df)
+
+# 88
+if __name__ == "__main__":
+    test_cases = [
+        {
+            "nums1": [1, 2, 3, 0, 0, 0],
+            "m": 3,
+            "nums2": [2, 5, 6],
+            "n": 3,
+            "expected": [1, 2, 2, 3, 5, 6],
+        },
+        {"nums1": [1], "m": 1, "nums2": [], "n": 0, "expected": [1]},
+        {"nums1": [0], "m": 0, "nums2": [1], "n": 1, "expected": [1]},
+    ]
+
+    # Testing the Solution class
+    for i, case in enumerate(test_cases):
+        nums1 = case["nums1"][:]
+        m = case["m"]
+        nums2 = case["nums2"]
+        n = case["n"]
+        expected = case["expected"]
+
+        _88().merge(nums1, m, nums2, n)
+
+        # Print the results
+        print(f"Test case {i + 1}:")
+        print(f"Input nums1: {case['nums1']} (m = {m}), nums2: {nums2} (n = {n})")
+        print(f"Output: {nums1}")
+        print(f"Expected: {expected}")
+        print(f"Pass: {nums1 == expected}")
+        pri
