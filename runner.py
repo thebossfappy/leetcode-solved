@@ -148,4 +148,4 @@ if __name__ == "__main__":
         print(f"Output: {nums1}")
         print(f"Expected: {expected}")
         print(f"Pass: {nums1 == expected}")
-        print("-" * 30)
+        pri
