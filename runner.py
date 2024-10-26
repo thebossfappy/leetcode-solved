@@ -4,9 +4,9 @@ from quizzes._3 import Solution as _3
 from quizzes._169 import Solution as _169
 from quizzes._976 import Solution as _976
 from quizzes.pandas._175 import Solution as _175
+from quizzes.pandas._181 import Solution as _181
 from quizzes.pandas._182 import Solution as _182
 from quizzes.pandas._183 import Solution as _183
-
 
 # if __name__ == "__main__":
 #     input = [2, 2, 1, 1, 1, 2, 2]
@@ -70,6 +70,22 @@ from quizzes.pandas._183 import Solution as _183
 #     result_df = _175.combine_two_tables(person_df, address_df)
 #     print(result_df)
 
+# 181
+if __name__ == "__main__":
+    import pandas as pd
+
+    employee_data = {
+        "id": [1, 2, 3, 4],
+        "name": ["Joe", "Henry", "Sam", "Max"],
+        "salary": [70000, 80000, 60000, 90000],
+        "managerId": [3, 4, None, None],
+    }
+
+    # Convert to DataFrame
+    employee_df = pd.DataFrame(employee_data)
+
+    # Call the function
+    result_df = _181.find_employees(employee_df)
 
 # 182
 if __name__ == "__main__":
